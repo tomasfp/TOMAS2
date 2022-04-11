@@ -1,0 +1,2925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.examples.users.clientes</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">7</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-11-03 03:42:45 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:11]"><span>[1:11]</span> <span>Conexion Exitosa y zip codigo</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:17]"><span>[2:17]</span> <span>Mostrar user name</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:22]"><span>[3:22]</span> <span>Validar correo existente</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:28]"><span>[4:28]</span> <span>Validar username que no existe</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5:34]"><span>[5:34]</span> <span>Validar correo no existente</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:40]"><span>[6:40]</span> <span>Alta de usuario</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7.1:84]"><span>[7.1:84]</span> <span>Alta de 3 usuarios</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7.2:85]"><span>[7.2:85]</span> <span>Alta de 3 usuarios</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7.3:86]"><span>[7.3:86]</span> <span>Alta de 3 usuarios</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/examples/users/clientes.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Ejemplo</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:11]</span>
+                <span class="scenario-name">Conexion Exitosa y zip codigo</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>680</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">15:42:42.612 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">655</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">15:42:43.033 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/users
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:42:43.260 response time in milliseconds: 224
+1 &lt; 200
+1 &lt; Date: Wed, 03 Nov 2021 20:42:43 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 999
+1 &lt; x-ratelimit-reset: 1634740200
+1 &lt; vary: Origin, Accept-Encoding
+1 &lt; access-control-allow-credentials: true
+1 &lt; cache-control: max-age=43200
+1 &lt; pragma: no-cache
+1 &lt; expires: -1
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 2864
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=pcC6IpLPOhU2XWsDPXdusxkRXYKYJtnrXBCxlQto6oHrGGx3UE4A9btdR11tItOEWBLWjkY7hpGkpbPXu%2FZx0fZjJBhWRTk%2BvprQzUWwkei98aWjt7xoPcdcusBt1VeXR%2FS8OejJ03bKUw4%2BQC6k&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6a886e43c9746dfd-LIM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Leanne Graham&quot;,
+    &quot;username&quot;: &quot;Bret&quot;,
+    &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kulas Light&quot;,
+      &quot;suite&quot;: &quot;Apt. 556&quot;,
+      &quot;city&quot;: &quot;Gwenborough&quot;,
+      &quot;zipcode&quot;: &quot;92998-3874&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-37.3159&quot;,
+        &quot;lng&quot;: &quot;81.1496&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+    &quot;website&quot;: &quot;hildegard.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+      &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;Ervin Howell&quot;,
+    &quot;username&quot;: &quot;Antonette&quot;,
+    &quot;email&quot;: &quot;Shanna@melissa.tv&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Victor Plains&quot;,
+      &quot;suite&quot;: &quot;Suite 879&quot;,
+      &quot;city&quot;: &quot;Wisokyburgh&quot;,
+      &quot;zipcode&quot;: &quot;90566-7771&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-43.9509&quot;,
+        &quot;lng&quot;: &quot;-34.4618&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;010-692-6593 x09125&quot;,
+    &quot;website&quot;: &quot;anastasia.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Deckow-Crist&quot;,
+      &quot;catchPhrase&quot;: &quot;Proactive didactic contingency&quot;,
+      &quot;bs&quot;: &quot;synergize scalable supply-chains&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;Clementine Bauch&quot;,
+    &quot;username&quot;: &quot;Samantha&quot;,
+    &quot;email&quot;: &quot;Nathan@yesenia.net&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Douglas Extension&quot;,
+      &quot;suite&quot;: &quot;Suite 847&quot;,
+      &quot;city&quot;: &quot;McKenziehaven&quot;,
+      &quot;zipcode&quot;: &quot;59590-4157&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-68.6102&quot;,
+        &quot;lng&quot;: &quot;-47.0653&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-463-123-4447&quot;,
+    &quot;website&quot;: &quot;ramiro.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Jacobson&quot;,
+      &quot;catchPhrase&quot;: &quot;Face to face bifurcated interface&quot;,
+      &quot;bs&quot;: &quot;e-enable strategic applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;name&quot;: &quot;Patricia Lebsack&quot;,
+    &quot;username&quot;: &quot;Karianne&quot;,
+    &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Hoeger Mall&quot;,
+      &quot;suite&quot;: &quot;Apt. 692&quot;,
+      &quot;city&quot;: &quot;South Elvis&quot;,
+      &quot;zipcode&quot;: &quot;53919-4257&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;29.4572&quot;,
+        &quot;lng&quot;: &quot;-164.2990&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;493-170-9623 x156&quot;,
+    &quot;website&quot;: &quot;kale.biz&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Robel-Corkery&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-tiered zero tolerance productivity&quot;,
+      &quot;bs&quot;: &quot;transition cutting-edge web services&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;name&quot;: &quot;Chelsey Dietrich&quot;,
+    &quot;username&quot;: &quot;Kamren&quot;,
+    &quot;email&quot;: &quot;Lucio_Hettinger@annie.ca&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Skiles Walks&quot;,
+      &quot;suite&quot;: &quot;Suite 351&quot;,
+      &quot;city&quot;: &quot;Roscoeview&quot;,
+      &quot;zipcode&quot;: &quot;33263&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-31.8129&quot;,
+        &quot;lng&quot;: &quot;62.5342&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(254)954-1289&quot;,
+    &quot;website&quot;: &quot;demarco.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Keebler LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;User-centric fault-tolerant solution&quot;,
+      &quot;bs&quot;: &quot;revolutionize end-to-end systems&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 6,
+    &quot;name&quot;: &quot;Mrs. Dennis Schulist&quot;,
+    &quot;username&quot;: &quot;Leopoldo_Corkery&quot;,
+    &quot;email&quot;: &quot;Karley_Dach@jasper.info&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Norberto Crossing&quot;,
+      &quot;suite&quot;: &quot;Apt. 950&quot;,
+      &quot;city&quot;: &quot;South Christy&quot;,
+      &quot;zipcode&quot;: &quot;23505-1337&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-71.4197&quot;,
+        &quot;lng&quot;: &quot;71.7478&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-477-935-8478 x6430&quot;,
+    &quot;website&quot;: &quot;ola.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Considine-Lockman&quot;,
+      &quot;catchPhrase&quot;: &quot;Synchronised bottom-line interface&quot;,
+      &quot;bs&quot;: &quot;e-enable innovative applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;Kurtis Weissnat&quot;,
+    &quot;username&quot;: &quot;Elwyn.Skiles&quot;,
+    &quot;email&quot;: &quot;Telly.Hoeger@billy.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Rex Trail&quot;,
+      &quot;suite&quot;: &quot;Suite 280&quot;,
+      &quot;city&quot;: &quot;Howemouth&quot;,
+      &quot;zipcode&quot;: &quot;58804-1099&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.8918&quot;,
+        &quot;lng&quot;: &quot;21.8984&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;210.067.6132&quot;,
+    &quot;website&quot;: &quot;elvis.io&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Johns Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Configurable multimedia task-force&quot;,
+      &quot;bs&quot;: &quot;generate enterprise e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;Nicholas Runolfsdottir V&quot;,
+    &quot;username&quot;: &quot;Maxime_Nienow&quot;,
+    &quot;email&quot;: &quot;Sherwood@rosamond.me&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Ellsworth Summit&quot;,
+      &quot;suite&quot;: &quot;Suite 729&quot;,
+      &quot;city&quot;: &quot;Aliyaview&quot;,
+      &quot;zipcode&quot;: &quot;45169&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-14.3990&quot;,
+        &quot;lng&quot;: &quot;-120.7677&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;586.493.6943 x140&quot;,
+    &quot;website&quot;: &quot;jacynthe.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Abernathy Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Implemented secondary concept&quot;,
+      &quot;bs&quot;: &quot;e-enable extensible e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;Glenna Reichert&quot;,
+    &quot;username&quot;: &quot;Delphine&quot;,
+    &quot;email&quot;: &quot;Chaim_McDermott@dana.io&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Dayna Park&quot;,
+      &quot;suite&quot;: &quot;Suite 449&quot;,
+      &quot;city&quot;: &quot;Bartholomebury&quot;,
+      &quot;zipcode&quot;: &quot;76495-3109&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.6463&quot;,
+        &quot;lng&quot;: &quot;-168.8889&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(775)976-6794 x41206&quot;,
+    &quot;website&quot;: &quot;conrad.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Yost and Sons&quot;,
+      &quot;catchPhrase&quot;: &quot;Switchable contextually-based project&quot;,
+      &quot;bs&quot;: &quot;aggregate real-time technologies&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 10,
+    &quot;name&quot;: &quot;Clementina DuBuque&quot;,
+    &quot;username&quot;: &quot;Moriah.Stanton&quot;,
+    &quot;email&quot;: &quot;Rey.Padberg@karina.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kattie Turnpike&quot;,
+      &quot;suite&quot;: &quot;Suite 198&quot;,
+      &quot;city&quot;: &quot;Lebsackbury&quot;,
+      &quot;zipcode&quot;: &quot;31428-2261&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-38.2386&quot;,
+        &quot;lng&quot;: &quot;57.2232&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;024-648-3804&quot;,
+    &quot;website&quot;: &quot;ambrose.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Hoeger LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;Centralized empowering task-force&quot;,
+      &quot;bs&quot;: &quot;target end-to-end models&quot;
+    }
+  }
+]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.[0].address.zipcode == &#39;92998-3874&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">23</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:17]</span>
+                <span class="scenario-name">Mostrar user name</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>60</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">15:42:43.326 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">58</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">15:42:43.330 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/users
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:42:43.386 response time in milliseconds: 55
+1 &lt; 200
+1 &lt; Date: Wed, 03 Nov 2021 20:42:43 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 999
+1 &lt; x-ratelimit-reset: 1634740200
+1 &lt; vary: Origin, Accept-Encoding
+1 &lt; access-control-allow-credentials: true
+1 &lt; cache-control: max-age=43200
+1 &lt; pragma: no-cache
+1 &lt; expires: -1
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 2864
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=jfpj1zkl%2FA3gse19bf%2F8MpEiAoQL6OcaH94EQVLACEaVwKS7iF2Mmb9XwludlisIeKu2Dg6ADfzDrqcCL%2BxqOXdqnDcHAanCyqSRN0h9VnujeV%2BIauvWkeb5r4ffoY%2Bs3gfAQa%2FH5nJF96fDEeIW&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6a886e44bd2b6e07-LIM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Leanne Graham&quot;,
+    &quot;username&quot;: &quot;Bret&quot;,
+    &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kulas Light&quot;,
+      &quot;suite&quot;: &quot;Apt. 556&quot;,
+      &quot;city&quot;: &quot;Gwenborough&quot;,
+      &quot;zipcode&quot;: &quot;92998-3874&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-37.3159&quot;,
+        &quot;lng&quot;: &quot;81.1496&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+    &quot;website&quot;: &quot;hildegard.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+      &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;Ervin Howell&quot;,
+    &quot;username&quot;: &quot;Antonette&quot;,
+    &quot;email&quot;: &quot;Shanna@melissa.tv&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Victor Plains&quot;,
+      &quot;suite&quot;: &quot;Suite 879&quot;,
+      &quot;city&quot;: &quot;Wisokyburgh&quot;,
+      &quot;zipcode&quot;: &quot;90566-7771&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-43.9509&quot;,
+        &quot;lng&quot;: &quot;-34.4618&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;010-692-6593 x09125&quot;,
+    &quot;website&quot;: &quot;anastasia.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Deckow-Crist&quot;,
+      &quot;catchPhrase&quot;: &quot;Proactive didactic contingency&quot;,
+      &quot;bs&quot;: &quot;synergize scalable supply-chains&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;Clementine Bauch&quot;,
+    &quot;username&quot;: &quot;Samantha&quot;,
+    &quot;email&quot;: &quot;Nathan@yesenia.net&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Douglas Extension&quot;,
+      &quot;suite&quot;: &quot;Suite 847&quot;,
+      &quot;city&quot;: &quot;McKenziehaven&quot;,
+      &quot;zipcode&quot;: &quot;59590-4157&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-68.6102&quot;,
+        &quot;lng&quot;: &quot;-47.0653&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-463-123-4447&quot;,
+    &quot;website&quot;: &quot;ramiro.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Jacobson&quot;,
+      &quot;catchPhrase&quot;: &quot;Face to face bifurcated interface&quot;,
+      &quot;bs&quot;: &quot;e-enable strategic applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;name&quot;: &quot;Patricia Lebsack&quot;,
+    &quot;username&quot;: &quot;Karianne&quot;,
+    &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Hoeger Mall&quot;,
+      &quot;suite&quot;: &quot;Apt. 692&quot;,
+      &quot;city&quot;: &quot;South Elvis&quot;,
+      &quot;zipcode&quot;: &quot;53919-4257&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;29.4572&quot;,
+        &quot;lng&quot;: &quot;-164.2990&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;493-170-9623 x156&quot;,
+    &quot;website&quot;: &quot;kale.biz&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Robel-Corkery&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-tiered zero tolerance productivity&quot;,
+      &quot;bs&quot;: &quot;transition cutting-edge web services&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;name&quot;: &quot;Chelsey Dietrich&quot;,
+    &quot;username&quot;: &quot;Kamren&quot;,
+    &quot;email&quot;: &quot;Lucio_Hettinger@annie.ca&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Skiles Walks&quot;,
+      &quot;suite&quot;: &quot;Suite 351&quot;,
+      &quot;city&quot;: &quot;Roscoeview&quot;,
+      &quot;zipcode&quot;: &quot;33263&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-31.8129&quot;,
+        &quot;lng&quot;: &quot;62.5342&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(254)954-1289&quot;,
+    &quot;website&quot;: &quot;demarco.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Keebler LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;User-centric fault-tolerant solution&quot;,
+      &quot;bs&quot;: &quot;revolutionize end-to-end systems&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 6,
+    &quot;name&quot;: &quot;Mrs. Dennis Schulist&quot;,
+    &quot;username&quot;: &quot;Leopoldo_Corkery&quot;,
+    &quot;email&quot;: &quot;Karley_Dach@jasper.info&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Norberto Crossing&quot;,
+      &quot;suite&quot;: &quot;Apt. 950&quot;,
+      &quot;city&quot;: &quot;South Christy&quot;,
+      &quot;zipcode&quot;: &quot;23505-1337&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-71.4197&quot;,
+        &quot;lng&quot;: &quot;71.7478&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-477-935-8478 x6430&quot;,
+    &quot;website&quot;: &quot;ola.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Considine-Lockman&quot;,
+      &quot;catchPhrase&quot;: &quot;Synchronised bottom-line interface&quot;,
+      &quot;bs&quot;: &quot;e-enable innovative applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;Kurtis Weissnat&quot;,
+    &quot;username&quot;: &quot;Elwyn.Skiles&quot;,
+    &quot;email&quot;: &quot;Telly.Hoeger@billy.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Rex Trail&quot;,
+      &quot;suite&quot;: &quot;Suite 280&quot;,
+      &quot;city&quot;: &quot;Howemouth&quot;,
+      &quot;zipcode&quot;: &quot;58804-1099&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.8918&quot;,
+        &quot;lng&quot;: &quot;21.8984&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;210.067.6132&quot;,
+    &quot;website&quot;: &quot;elvis.io&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Johns Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Configurable multimedia task-force&quot;,
+      &quot;bs&quot;: &quot;generate enterprise e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;Nicholas Runolfsdottir V&quot;,
+    &quot;username&quot;: &quot;Maxime_Nienow&quot;,
+    &quot;email&quot;: &quot;Sherwood@rosamond.me&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Ellsworth Summit&quot;,
+      &quot;suite&quot;: &quot;Suite 729&quot;,
+      &quot;city&quot;: &quot;Aliyaview&quot;,
+      &quot;zipcode&quot;: &quot;45169&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-14.3990&quot;,
+        &quot;lng&quot;: &quot;-120.7677&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;586.493.6943 x140&quot;,
+    &quot;website&quot;: &quot;jacynthe.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Abernathy Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Implemented secondary concept&quot;,
+      &quot;bs&quot;: &quot;e-enable extensible e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;Glenna Reichert&quot;,
+    &quot;username&quot;: &quot;Delphine&quot;,
+    &quot;email&quot;: &quot;Chaim_McDermott@dana.io&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Dayna Park&quot;,
+      &quot;suite&quot;: &quot;Suite 449&quot;,
+      &quot;city&quot;: &quot;Bartholomebury&quot;,
+      &quot;zipcode&quot;: &quot;76495-3109&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.6463&quot;,
+        &quot;lng&quot;: &quot;-168.8889&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(775)976-6794 x41206&quot;,
+    &quot;website&quot;: &quot;conrad.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Yost and Sons&quot;,
+      &quot;catchPhrase&quot;: &quot;Switchable contextually-based project&quot;,
+      &quot;bs&quot;: &quot;aggregate real-time technologies&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 10,
+    &quot;name&quot;: &quot;Clementina DuBuque&quot;,
+    &quot;username&quot;: &quot;Moriah.Stanton&quot;,
+    &quot;email&quot;: &quot;Rey.Padberg@karina.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kattie Turnpike&quot;,
+      &quot;suite&quot;: &quot;Suite 198&quot;,
+      &quot;city&quot;: &quot;Lebsackbury&quot;,
+      &quot;zipcode&quot;: &quot;31428-2261&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-38.2386&quot;,
+        &quot;lng&quot;: &quot;57.2232&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;024-648-3804&quot;,
+    &quot;website&quot;: &quot;ambrose.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Hoeger LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;Centralized empowering task-force&quot;,
+      &quot;bs&quot;: &quot;target end-to-end models&quot;
+    }
+  }
+]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match $.[0].username == &quot;Bret&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:22]</span>
+                <span class="scenario-name">Validar correo existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>123</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">15:42:43.396 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">121</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">15:42:43.398 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/users
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:42:43.517 response time in milliseconds: 118
+1 &lt; 200
+1 &lt; Date: Wed, 03 Nov 2021 20:42:43 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 999
+1 &lt; x-ratelimit-reset: 1634740200
+1 &lt; vary: Origin, Accept-Encoding
+1 &lt; access-control-allow-credentials: true
+1 &lt; cache-control: max-age=43200
+1 &lt; pragma: no-cache
+1 &lt; expires: -1
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 2864
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=VlAOuw6qZfxTtHjNxHI%2B2wGCh%2BSPere83PTVTi%2FF%2BMrPpyVeXFjUdXc6v6YaKgQ1QVf9luaEJptmvx9ryAhM%2FNcGFKiMYR3VMSRcQoAbJg%2BGGgexM79fXXEO7bJ7gh7O0lAa1WgQMBeE0g9qrI3x&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6a886e457cb26df8-LIM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Leanne Graham&quot;,
+    &quot;username&quot;: &quot;Bret&quot;,
+    &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kulas Light&quot;,
+      &quot;suite&quot;: &quot;Apt. 556&quot;,
+      &quot;city&quot;: &quot;Gwenborough&quot;,
+      &quot;zipcode&quot;: &quot;92998-3874&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-37.3159&quot;,
+        &quot;lng&quot;: &quot;81.1496&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+    &quot;website&quot;: &quot;hildegard.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+      &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;Ervin Howell&quot;,
+    &quot;username&quot;: &quot;Antonette&quot;,
+    &quot;email&quot;: &quot;Shanna@melissa.tv&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Victor Plains&quot;,
+      &quot;suite&quot;: &quot;Suite 879&quot;,
+      &quot;city&quot;: &quot;Wisokyburgh&quot;,
+      &quot;zipcode&quot;: &quot;90566-7771&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-43.9509&quot;,
+        &quot;lng&quot;: &quot;-34.4618&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;010-692-6593 x09125&quot;,
+    &quot;website&quot;: &quot;anastasia.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Deckow-Crist&quot;,
+      &quot;catchPhrase&quot;: &quot;Proactive didactic contingency&quot;,
+      &quot;bs&quot;: &quot;synergize scalable supply-chains&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;Clementine Bauch&quot;,
+    &quot;username&quot;: &quot;Samantha&quot;,
+    &quot;email&quot;: &quot;Nathan@yesenia.net&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Douglas Extension&quot;,
+      &quot;suite&quot;: &quot;Suite 847&quot;,
+      &quot;city&quot;: &quot;McKenziehaven&quot;,
+      &quot;zipcode&quot;: &quot;59590-4157&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-68.6102&quot;,
+        &quot;lng&quot;: &quot;-47.0653&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-463-123-4447&quot;,
+    &quot;website&quot;: &quot;ramiro.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Jacobson&quot;,
+      &quot;catchPhrase&quot;: &quot;Face to face bifurcated interface&quot;,
+      &quot;bs&quot;: &quot;e-enable strategic applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;name&quot;: &quot;Patricia Lebsack&quot;,
+    &quot;username&quot;: &quot;Karianne&quot;,
+    &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Hoeger Mall&quot;,
+      &quot;suite&quot;: &quot;Apt. 692&quot;,
+      &quot;city&quot;: &quot;South Elvis&quot;,
+      &quot;zipcode&quot;: &quot;53919-4257&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;29.4572&quot;,
+        &quot;lng&quot;: &quot;-164.2990&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;493-170-9623 x156&quot;,
+    &quot;website&quot;: &quot;kale.biz&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Robel-Corkery&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-tiered zero tolerance productivity&quot;,
+      &quot;bs&quot;: &quot;transition cutting-edge web services&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;name&quot;: &quot;Chelsey Dietrich&quot;,
+    &quot;username&quot;: &quot;Kamren&quot;,
+    &quot;email&quot;: &quot;Lucio_Hettinger@annie.ca&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Skiles Walks&quot;,
+      &quot;suite&quot;: &quot;Suite 351&quot;,
+      &quot;city&quot;: &quot;Roscoeview&quot;,
+      &quot;zipcode&quot;: &quot;33263&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-31.8129&quot;,
+        &quot;lng&quot;: &quot;62.5342&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(254)954-1289&quot;,
+    &quot;website&quot;: &quot;demarco.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Keebler LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;User-centric fault-tolerant solution&quot;,
+      &quot;bs&quot;: &quot;revolutionize end-to-end systems&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 6,
+    &quot;name&quot;: &quot;Mrs. Dennis Schulist&quot;,
+    &quot;username&quot;: &quot;Leopoldo_Corkery&quot;,
+    &quot;email&quot;: &quot;Karley_Dach@jasper.info&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Norberto Crossing&quot;,
+      &quot;suite&quot;: &quot;Apt. 950&quot;,
+      &quot;city&quot;: &quot;South Christy&quot;,
+      &quot;zipcode&quot;: &quot;23505-1337&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-71.4197&quot;,
+        &quot;lng&quot;: &quot;71.7478&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-477-935-8478 x6430&quot;,
+    &quot;website&quot;: &quot;ola.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Considine-Lockman&quot;,
+      &quot;catchPhrase&quot;: &quot;Synchronised bottom-line interface&quot;,
+      &quot;bs&quot;: &quot;e-enable innovative applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;Kurtis Weissnat&quot;,
+    &quot;username&quot;: &quot;Elwyn.Skiles&quot;,
+    &quot;email&quot;: &quot;Telly.Hoeger@billy.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Rex Trail&quot;,
+      &quot;suite&quot;: &quot;Suite 280&quot;,
+      &quot;city&quot;: &quot;Howemouth&quot;,
+      &quot;zipcode&quot;: &quot;58804-1099&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.8918&quot;,
+        &quot;lng&quot;: &quot;21.8984&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;210.067.6132&quot;,
+    &quot;website&quot;: &quot;elvis.io&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Johns Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Configurable multimedia task-force&quot;,
+      &quot;bs&quot;: &quot;generate enterprise e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;Nicholas Runolfsdottir V&quot;,
+    &quot;username&quot;: &quot;Maxime_Nienow&quot;,
+    &quot;email&quot;: &quot;Sherwood@rosamond.me&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Ellsworth Summit&quot;,
+      &quot;suite&quot;: &quot;Suite 729&quot;,
+      &quot;city&quot;: &quot;Aliyaview&quot;,
+      &quot;zipcode&quot;: &quot;45169&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-14.3990&quot;,
+        &quot;lng&quot;: &quot;-120.7677&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;586.493.6943 x140&quot;,
+    &quot;website&quot;: &quot;jacynthe.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Abernathy Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Implemented secondary concept&quot;,
+      &quot;bs&quot;: &quot;e-enable extensible e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;Glenna Reichert&quot;,
+    &quot;username&quot;: &quot;Delphine&quot;,
+    &quot;email&quot;: &quot;Chaim_McDermott@dana.io&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Dayna Park&quot;,
+      &quot;suite&quot;: &quot;Suite 449&quot;,
+      &quot;city&quot;: &quot;Bartholomebury&quot;,
+      &quot;zipcode&quot;: &quot;76495-3109&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.6463&quot;,
+        &quot;lng&quot;: &quot;-168.8889&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(775)976-6794 x41206&quot;,
+    &quot;website&quot;: &quot;conrad.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Yost and Sons&quot;,
+      &quot;catchPhrase&quot;: &quot;Switchable contextually-based project&quot;,
+      &quot;bs&quot;: &quot;aggregate real-time technologies&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 10,
+    &quot;name&quot;: &quot;Clementina DuBuque&quot;,
+    &quot;username&quot;: &quot;Moriah.Stanton&quot;,
+    &quot;email&quot;: &quot;Rey.Padberg@karina.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kattie Turnpike&quot;,
+      &quot;suite&quot;: &quot;Suite 198&quot;,
+      &quot;city&quot;: &quot;Lebsackbury&quot;,
+      &quot;zipcode&quot;: &quot;31428-2261&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-38.2386&quot;,
+        &quot;lng&quot;: &quot;57.2232&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;024-648-3804&quot;,
+    &quot;website&quot;: &quot;ambrose.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Hoeger LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;Centralized empowering task-force&quot;,
+      &quot;bs&quot;: &quot;target end-to-end models&quot;
+    }
+  }
+]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match $.[0].email == &quot;Sincere@april.biz&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:28]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:28]</span>
+                <span class="scenario-name">Validar username que no existe</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>107</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">15:42:43.532 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">105</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">15:42:43.537 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/users
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:42:43.637 response time in milliseconds: 99
+1 &lt; 200
+1 &lt; Date: Wed, 03 Nov 2021 20:42:43 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 999
+1 &lt; x-ratelimit-reset: 1634740200
+1 &lt; vary: Origin, Accept-Encoding
+1 &lt; access-control-allow-credentials: true
+1 &lt; cache-control: max-age=43200
+1 &lt; pragma: no-cache
+1 &lt; expires: -1
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 2864
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=C7FaF1oB19MtSyQPFyCLJKKq6TehP0zkndAP4CQh%2B%2FgEf6Dp%2FbumgJ9%2FbgW4l88KNsRyk1XGHLLokp6D6kDIXqeBtPmdyqVUJ6bF8yEP2haVYAmEQpULg84jKJOtNQgd4ZvfIg9vkiLt4ai2Tbn5&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6a886e463b076dfd-LIM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Leanne Graham&quot;,
+    &quot;username&quot;: &quot;Bret&quot;,
+    &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kulas Light&quot;,
+      &quot;suite&quot;: &quot;Apt. 556&quot;,
+      &quot;city&quot;: &quot;Gwenborough&quot;,
+      &quot;zipcode&quot;: &quot;92998-3874&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-37.3159&quot;,
+        &quot;lng&quot;: &quot;81.1496&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+    &quot;website&quot;: &quot;hildegard.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+      &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;Ervin Howell&quot;,
+    &quot;username&quot;: &quot;Antonette&quot;,
+    &quot;email&quot;: &quot;Shanna@melissa.tv&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Victor Plains&quot;,
+      &quot;suite&quot;: &quot;Suite 879&quot;,
+      &quot;city&quot;: &quot;Wisokyburgh&quot;,
+      &quot;zipcode&quot;: &quot;90566-7771&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-43.9509&quot;,
+        &quot;lng&quot;: &quot;-34.4618&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;010-692-6593 x09125&quot;,
+    &quot;website&quot;: &quot;anastasia.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Deckow-Crist&quot;,
+      &quot;catchPhrase&quot;: &quot;Proactive didactic contingency&quot;,
+      &quot;bs&quot;: &quot;synergize scalable supply-chains&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;Clementine Bauch&quot;,
+    &quot;username&quot;: &quot;Samantha&quot;,
+    &quot;email&quot;: &quot;Nathan@yesenia.net&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Douglas Extension&quot;,
+      &quot;suite&quot;: &quot;Suite 847&quot;,
+      &quot;city&quot;: &quot;McKenziehaven&quot;,
+      &quot;zipcode&quot;: &quot;59590-4157&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-68.6102&quot;,
+        &quot;lng&quot;: &quot;-47.0653&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-463-123-4447&quot;,
+    &quot;website&quot;: &quot;ramiro.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Jacobson&quot;,
+      &quot;catchPhrase&quot;: &quot;Face to face bifurcated interface&quot;,
+      &quot;bs&quot;: &quot;e-enable strategic applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;name&quot;: &quot;Patricia Lebsack&quot;,
+    &quot;username&quot;: &quot;Karianne&quot;,
+    &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Hoeger Mall&quot;,
+      &quot;suite&quot;: &quot;Apt. 692&quot;,
+      &quot;city&quot;: &quot;South Elvis&quot;,
+      &quot;zipcode&quot;: &quot;53919-4257&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;29.4572&quot;,
+        &quot;lng&quot;: &quot;-164.2990&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;493-170-9623 x156&quot;,
+    &quot;website&quot;: &quot;kale.biz&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Robel-Corkery&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-tiered zero tolerance productivity&quot;,
+      &quot;bs&quot;: &quot;transition cutting-edge web services&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;name&quot;: &quot;Chelsey Dietrich&quot;,
+    &quot;username&quot;: &quot;Kamren&quot;,
+    &quot;email&quot;: &quot;Lucio_Hettinger@annie.ca&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Skiles Walks&quot;,
+      &quot;suite&quot;: &quot;Suite 351&quot;,
+      &quot;city&quot;: &quot;Roscoeview&quot;,
+      &quot;zipcode&quot;: &quot;33263&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-31.8129&quot;,
+        &quot;lng&quot;: &quot;62.5342&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(254)954-1289&quot;,
+    &quot;website&quot;: &quot;demarco.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Keebler LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;User-centric fault-tolerant solution&quot;,
+      &quot;bs&quot;: &quot;revolutionize end-to-end systems&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 6,
+    &quot;name&quot;: &quot;Mrs. Dennis Schulist&quot;,
+    &quot;username&quot;: &quot;Leopoldo_Corkery&quot;,
+    &quot;email&quot;: &quot;Karley_Dach@jasper.info&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Norberto Crossing&quot;,
+      &quot;suite&quot;: &quot;Apt. 950&quot;,
+      &quot;city&quot;: &quot;South Christy&quot;,
+      &quot;zipcode&quot;: &quot;23505-1337&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-71.4197&quot;,
+        &quot;lng&quot;: &quot;71.7478&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-477-935-8478 x6430&quot;,
+    &quot;website&quot;: &quot;ola.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Considine-Lockman&quot;,
+      &quot;catchPhrase&quot;: &quot;Synchronised bottom-line interface&quot;,
+      &quot;bs&quot;: &quot;e-enable innovative applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;Kurtis Weissnat&quot;,
+    &quot;username&quot;: &quot;Elwyn.Skiles&quot;,
+    &quot;email&quot;: &quot;Telly.Hoeger@billy.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Rex Trail&quot;,
+      &quot;suite&quot;: &quot;Suite 280&quot;,
+      &quot;city&quot;: &quot;Howemouth&quot;,
+      &quot;zipcode&quot;: &quot;58804-1099&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.8918&quot;,
+        &quot;lng&quot;: &quot;21.8984&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;210.067.6132&quot;,
+    &quot;website&quot;: &quot;elvis.io&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Johns Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Configurable multimedia task-force&quot;,
+      &quot;bs&quot;: &quot;generate enterprise e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;Nicholas Runolfsdottir V&quot;,
+    &quot;username&quot;: &quot;Maxime_Nienow&quot;,
+    &quot;email&quot;: &quot;Sherwood@rosamond.me&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Ellsworth Summit&quot;,
+      &quot;suite&quot;: &quot;Suite 729&quot;,
+      &quot;city&quot;: &quot;Aliyaview&quot;,
+      &quot;zipcode&quot;: &quot;45169&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-14.3990&quot;,
+        &quot;lng&quot;: &quot;-120.7677&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;586.493.6943 x140&quot;,
+    &quot;website&quot;: &quot;jacynthe.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Abernathy Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Implemented secondary concept&quot;,
+      &quot;bs&quot;: &quot;e-enable extensible e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;Glenna Reichert&quot;,
+    &quot;username&quot;: &quot;Delphine&quot;,
+    &quot;email&quot;: &quot;Chaim_McDermott@dana.io&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Dayna Park&quot;,
+      &quot;suite&quot;: &quot;Suite 449&quot;,
+      &quot;city&quot;: &quot;Bartholomebury&quot;,
+      &quot;zipcode&quot;: &quot;76495-3109&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.6463&quot;,
+        &quot;lng&quot;: &quot;-168.8889&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(775)976-6794 x41206&quot;,
+    &quot;website&quot;: &quot;conrad.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Yost and Sons&quot;,
+      &quot;catchPhrase&quot;: &quot;Switchable contextually-based project&quot;,
+      &quot;bs&quot;: &quot;aggregate real-time technologies&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 10,
+    &quot;name&quot;: &quot;Clementina DuBuque&quot;,
+    &quot;username&quot;: &quot;Moriah.Stanton&quot;,
+    &quot;email&quot;: &quot;Rey.Padberg@karina.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kattie Turnpike&quot;,
+      &quot;suite&quot;: &quot;Suite 198&quot;,
+      &quot;city&quot;: &quot;Lebsackbury&quot;,
+      &quot;zipcode&quot;: &quot;31428-2261&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-38.2386&quot;,
+        &quot;lng&quot;: &quot;57.2232&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;024-648-3804&quot;,
+    &quot;website&quot;: &quot;ambrose.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Hoeger LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;Centralized empowering task-force&quot;,
+      &quot;bs&quot;: &quot;target end-to-end models&quot;
+    }
+  }
+]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref failed">31</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match $.[1].username == &quot;Tomas&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">15:42:43.642 src/test/java/examples/users/clientes.feature:31
+Then match $.[1].username == &quot;Tomas&quot;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  &#39;Antonette&#39;
+  &#39;Tomas&#39;
+
+src/test/java/examples/users/clientes.feature:31
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:34]</span>
+                <span class="scenario-name">Validar correo no existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>67</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">15:42:43.653 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">65</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">15:42:43.657 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/users
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:42:43.720 response time in milliseconds: 63
+1 &lt; 200
+1 &lt; Date: Wed, 03 Nov 2021 20:42:43 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 999
+1 &lt; x-ratelimit-reset: 1634740200
+1 &lt; vary: Origin, Accept-Encoding
+1 &lt; access-control-allow-credentials: true
+1 &lt; cache-control: max-age=43200
+1 &lt; pragma: no-cache
+1 &lt; expires: -1
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 2864
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=uBOZQQfPHdw3Cneu%2Fa4c5KePpZ0WkraF9ikCrzsv0k2OJe7G8nQPOj5%2FyRAtAKxzKOKj%2BblrEol8XwCBy%2F5V44SmkGJGFLJXMv7XRvNeK4bKrGed5z9puLarb86%2B2wJ8JFlm2J4%2FTVdawLKXQ0M%2F&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6a886e46ca8c6df7-LIM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Leanne Graham&quot;,
+    &quot;username&quot;: &quot;Bret&quot;,
+    &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kulas Light&quot;,
+      &quot;suite&quot;: &quot;Apt. 556&quot;,
+      &quot;city&quot;: &quot;Gwenborough&quot;,
+      &quot;zipcode&quot;: &quot;92998-3874&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-37.3159&quot;,
+        &quot;lng&quot;: &quot;81.1496&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+    &quot;website&quot;: &quot;hildegard.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+      &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;Ervin Howell&quot;,
+    &quot;username&quot;: &quot;Antonette&quot;,
+    &quot;email&quot;: &quot;Shanna@melissa.tv&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Victor Plains&quot;,
+      &quot;suite&quot;: &quot;Suite 879&quot;,
+      &quot;city&quot;: &quot;Wisokyburgh&quot;,
+      &quot;zipcode&quot;: &quot;90566-7771&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-43.9509&quot;,
+        &quot;lng&quot;: &quot;-34.4618&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;010-692-6593 x09125&quot;,
+    &quot;website&quot;: &quot;anastasia.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Deckow-Crist&quot;,
+      &quot;catchPhrase&quot;: &quot;Proactive didactic contingency&quot;,
+      &quot;bs&quot;: &quot;synergize scalable supply-chains&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;Clementine Bauch&quot;,
+    &quot;username&quot;: &quot;Samantha&quot;,
+    &quot;email&quot;: &quot;Nathan@yesenia.net&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Douglas Extension&quot;,
+      &quot;suite&quot;: &quot;Suite 847&quot;,
+      &quot;city&quot;: &quot;McKenziehaven&quot;,
+      &quot;zipcode&quot;: &quot;59590-4157&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-68.6102&quot;,
+        &quot;lng&quot;: &quot;-47.0653&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-463-123-4447&quot;,
+    &quot;website&quot;: &quot;ramiro.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Jacobson&quot;,
+      &quot;catchPhrase&quot;: &quot;Face to face bifurcated interface&quot;,
+      &quot;bs&quot;: &quot;e-enable strategic applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;name&quot;: &quot;Patricia Lebsack&quot;,
+    &quot;username&quot;: &quot;Karianne&quot;,
+    &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Hoeger Mall&quot;,
+      &quot;suite&quot;: &quot;Apt. 692&quot;,
+      &quot;city&quot;: &quot;South Elvis&quot;,
+      &quot;zipcode&quot;: &quot;53919-4257&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;29.4572&quot;,
+        &quot;lng&quot;: &quot;-164.2990&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;493-170-9623 x156&quot;,
+    &quot;website&quot;: &quot;kale.biz&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Robel-Corkery&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-tiered zero tolerance productivity&quot;,
+      &quot;bs&quot;: &quot;transition cutting-edge web services&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;name&quot;: &quot;Chelsey Dietrich&quot;,
+    &quot;username&quot;: &quot;Kamren&quot;,
+    &quot;email&quot;: &quot;Lucio_Hettinger@annie.ca&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Skiles Walks&quot;,
+      &quot;suite&quot;: &quot;Suite 351&quot;,
+      &quot;city&quot;: &quot;Roscoeview&quot;,
+      &quot;zipcode&quot;: &quot;33263&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-31.8129&quot;,
+        &quot;lng&quot;: &quot;62.5342&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(254)954-1289&quot;,
+    &quot;website&quot;: &quot;demarco.info&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Keebler LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;User-centric fault-tolerant solution&quot;,
+      &quot;bs&quot;: &quot;revolutionize end-to-end systems&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 6,
+    &quot;name&quot;: &quot;Mrs. Dennis Schulist&quot;,
+    &quot;username&quot;: &quot;Leopoldo_Corkery&quot;,
+    &quot;email&quot;: &quot;Karley_Dach@jasper.info&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Norberto Crossing&quot;,
+      &quot;suite&quot;: &quot;Apt. 950&quot;,
+      &quot;city&quot;: &quot;South Christy&quot;,
+      &quot;zipcode&quot;: &quot;23505-1337&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-71.4197&quot;,
+        &quot;lng&quot;: &quot;71.7478&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-477-935-8478 x6430&quot;,
+    &quot;website&quot;: &quot;ola.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Considine-Lockman&quot;,
+      &quot;catchPhrase&quot;: &quot;Synchronised bottom-line interface&quot;,
+      &quot;bs&quot;: &quot;e-enable innovative applications&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;Kurtis Weissnat&quot;,
+    &quot;username&quot;: &quot;Elwyn.Skiles&quot;,
+    &quot;email&quot;: &quot;Telly.Hoeger@billy.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Rex Trail&quot;,
+      &quot;suite&quot;: &quot;Suite 280&quot;,
+      &quot;city&quot;: &quot;Howemouth&quot;,
+      &quot;zipcode&quot;: &quot;58804-1099&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.8918&quot;,
+        &quot;lng&quot;: &quot;21.8984&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;210.067.6132&quot;,
+    &quot;website&quot;: &quot;elvis.io&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Johns Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Configurable multimedia task-force&quot;,
+      &quot;bs&quot;: &quot;generate enterprise e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;Nicholas Runolfsdottir V&quot;,
+    &quot;username&quot;: &quot;Maxime_Nienow&quot;,
+    &quot;email&quot;: &quot;Sherwood@rosamond.me&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Ellsworth Summit&quot;,
+      &quot;suite&quot;: &quot;Suite 729&quot;,
+      &quot;city&quot;: &quot;Aliyaview&quot;,
+      &quot;zipcode&quot;: &quot;45169&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-14.3990&quot;,
+        &quot;lng&quot;: &quot;-120.7677&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;586.493.6943 x140&quot;,
+    &quot;website&quot;: &quot;jacynthe.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Abernathy Group&quot;,
+      &quot;catchPhrase&quot;: &quot;Implemented secondary concept&quot;,
+      &quot;bs&quot;: &quot;e-enable extensible e-tailers&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;Glenna Reichert&quot;,
+    &quot;username&quot;: &quot;Delphine&quot;,
+    &quot;email&quot;: &quot;Chaim_McDermott@dana.io&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Dayna Park&quot;,
+      &quot;suite&quot;: &quot;Suite 449&quot;,
+      &quot;city&quot;: &quot;Bartholomebury&quot;,
+      &quot;zipcode&quot;: &quot;76495-3109&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;24.6463&quot;,
+        &quot;lng&quot;: &quot;-168.8889&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;(775)976-6794 x41206&quot;,
+    &quot;website&quot;: &quot;conrad.com&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Yost and Sons&quot;,
+      &quot;catchPhrase&quot;: &quot;Switchable contextually-based project&quot;,
+      &quot;bs&quot;: &quot;aggregate real-time technologies&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 10,
+    &quot;name&quot;: &quot;Clementina DuBuque&quot;,
+    &quot;username&quot;: &quot;Moriah.Stanton&quot;,
+    &quot;email&quot;: &quot;Rey.Padberg@karina.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kattie Turnpike&quot;,
+      &quot;suite&quot;: &quot;Suite 198&quot;,
+      &quot;city&quot;: &quot;Lebsackbury&quot;,
+      &quot;zipcode&quot;: &quot;31428-2261&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-38.2386&quot;,
+        &quot;lng&quot;: &quot;57.2232&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;024-648-3804&quot;,
+    &quot;website&quot;: &quot;ambrose.net&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Hoeger LLC&quot;,
+      &quot;catchPhrase&quot;: &quot;Centralized empowering task-force&quot;,
+      &quot;bs&quot;: &quot;target end-to-end models&quot;
+    }
+  }
+]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref failed">37</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match $.[0].email == &quot;Sincere@april.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">15:42:43.723 src/test/java/examples/users/clientes.feature:37
+Then match $.[0].email == &quot;Sincere@april.com&quot;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  &#39;Sincere@april.biz&#39;
+  &#39;Sincere@april.com&#39;
+
+src/test/java/examples/users/clientes.feature:37
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:40]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:40]</span>
+                <span class="scenario-name">Alta de usuario</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>474</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.41">15:42:43.730 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.42">{
+&quot;name&quot;: &quot;Tomas&quot;,
+&quot;username&quot;: &quot;tomas1&quot;,
+&quot;email&quot;: &quot;tomas1@tomas.com&quot;,
+&quot;address&quot;: {
+  &quot;street&quot;: &quot;carmenca&quot;,
+  &quot;suite&quot;: &quot;Apt. 156&quot;,
+  &quot;city&quot;: &quot;Lima&quot;,
+  &quot;zipcode&quot;: &quot;54321-6789&quot;
+}
+      }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">472</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.56">15:42:43.760 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 151
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Tomas&quot;,&quot;username&quot;:&quot;tomas1&quot;,&quot;email&quot;:&quot;tomas1@tomas.com&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;carmenca&quot;,&quot;suite&quot;:&quot;Apt. 156&quot;,&quot;city&quot;:&quot;Lima&quot;,&quot;zipcode&quot;:&quot;54321-6789&quot;}}
+
+15:42:44.202 response time in milliseconds: 442
+1 &lt; 201
+1 &lt; Date: Wed, 03 Nov 2021 20:42:44 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 207
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 999
+1 &lt; x-ratelimit-reset: 1635972195
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; access-control-allow-credentials: true
+1 &lt; cache-control: no-cache
+1 &lt; pragma: no-cache
+1 &lt; expires: -1
+1 &lt; access-control-expose-headers: Location
+1 &lt; location: http://jsonplaceholder.typicode.com/users/11
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;cf-jRu9NWM7aEYuejVn3YL4vXa5lSA&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=VNBWxb1%2BzZAX3TwvIZrTkS%2BIlc6o0zpf2QcdsrX%2BV%2B%2F4A1GH5vEFFzr6FE4QAS%2Fpsq9HhVQch8trjGF1rL6EQuOqQwOOiu6DovM5xZ1VtifjlZAItHmJ5%2B3NASmCQ%2BVPRXDLgnZz7RKW2%2FEmGCYz&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6a886e478c296df1-LIM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{
+  &quot;name&quot;: &quot;Tomas&quot;,
+  &quot;username&quot;: &quot;tomas1&quot;,
+  &quot;email&quot;: &quot;tomas1@tomas.com&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;carmenca&quot;,
+    &quot;suite&quot;: &quot;Apt. 156&quot;,
+    &quot;city&quot;: &quot;Lima&quot;,
+    &quot;zipcode&quot;: &quot;54321-6789&quot;
+  },
+  &quot;id&quot;: 11
+}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.name == &quot;Tomas&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7.1:84]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7.1:84]</span>
+                <span class="scenario-name">Alta de 3 usuarios</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>258</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.61">15:42:44.212 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.62">{
+&quot;name&quot;: &#39;tomas&#39;,
+&quot;username&quot;: &#39;tomas0&#39;,
+&quot;email&quot;: &quot;tomas1@tomas.com&quot;,
+&quot;address&quot;: {
+  &quot;street&quot;: &quot;carmenca&quot;,
+  &quot;suite&quot;: &quot;Apt. 156&quot;,
+  &quot;city&quot;: &quot;Lima&quot;,
+  &quot;zipcode&quot;: &quot;54321-6789&quot;
+}
+      }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">254</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.76">15:42:44.214 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 151
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;tomas&quot;,&quot;username&quot;:&quot;tomas0&quot;,&quot;email&quot;:&quot;tomas1@tomas.com&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;carmenca&quot;,&quot;suite&quot;:&quot;Apt. 156&quot;,&quot;city&quot;:&quot;Lima&quot;,&quot;zipcode&quot;:&quot;54321-6789&quot;}}
+
+15:42:44.466 response time in milliseconds: 251
+1 &lt; 201
+1 &lt; Date: Wed, 03 Nov 2021 20:42:44 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 207
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 998
+1 &lt; x-ratelimit-reset: 1635972195
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; access-control-allow-credentials: true
+1 &lt; cache-control: no-cache
+1 &lt; pragma: no-cache
+1 &lt; expires: -1
+1 &lt; access-control-expose-headers: Location
+1 &lt; location: http://jsonplaceholder.typicode.com/users/11
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;cf-R00tuzboMbF3YoAAs8plfURtfSw&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=feQRba640O%2FYeydEZbi9g2s6IQTH1zltQGOcjleW5l8Eb0fKV2nbyOYvrshN%2FY%2BHZxMTy1rUYRNJSfXYjLKWm4Z%2F8EAhO1nAPpcyoiZ8UhW2rzz1ZOwPMrtnq5qgfG8LpCwM0CqH8JdyD6votJpx&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6a886e4a4d0f6e03-LIM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{
+  &quot;name&quot;: &quot;tomas&quot;,
+  &quot;username&quot;: &quot;tomas0&quot;,
+  &quot;email&quot;: &quot;tomas1@tomas.com&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;carmenca&quot;,
+    &quot;suite&quot;: &quot;Apt. 156&quot;,
+    &quot;city&quot;: &quot;Lima&quot;,
+    &quot;zipcode&quot;: &quot;54321-6789&quot;
+  },
+  &quot;id&quot;: 11
+}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.name == &#39;tomas&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.username == &#39;tomas0&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7.2:85]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7.2:85]</span>
+                <span class="scenario-name">Alta de 3 usuarios</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>253</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.61">15:42:44.475 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.62">{
+&quot;name&quot;: &#39;tomas1&#39;,
+&quot;username&quot;: &#39;tomas1&#39;,
+&quot;email&quot;: &quot;tomas1@tomas.com&quot;,
+&quot;address&quot;: {
+  &quot;street&quot;: &quot;carmenca&quot;,
+  &quot;suite&quot;: &quot;Apt. 156&quot;,
+  &quot;city&quot;: &quot;Lima&quot;,
+  &quot;zipcode&quot;: &quot;54321-6789&quot;
+}
+      }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">251</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.76">15:42:44.478 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 152
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;tomas1&quot;,&quot;username&quot;:&quot;tomas1&quot;,&quot;email&quot;:&quot;tomas1@tomas.com&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;carmenca&quot;,&quot;suite&quot;:&quot;Apt. 156&quot;,&quot;city&quot;:&quot;Lima&quot;,&quot;zipcode&quot;:&quot;54321-6789&quot;}}
+
+15:42:44.728 response time in milliseconds: 248
+1 &lt; 201
+1 &lt; Date: Wed, 03 Nov 2021 20:42:44 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 208
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 997
+1 &lt; x-ratelimit-reset: 1635972195
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; access-control-allow-credentials: true
+1 &lt; cache-control: no-cache
+1 &lt; pragma: no-cache
+1 &lt; expires: -1
+1 &lt; access-control-expose-headers: Location
+1 &lt; location: http://jsonplaceholder.typicode.com/users/11
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;d0-snlMaJL8fEFG7ENUhGXz3pGQBoM&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=v%2BOOSJK5Wxg2X4Sesp%2BohGASP%2BTOIFhiNp8nWPzRdR%2FySs17bpBb6YST1Uup38nGT3xw7dtls7C3i%2FPritqx577CcKZy%2BFiuaW4TMc%2BQvJvwUdsWL2EQn0hrsMiGvnkEwasb2pJa4h2Tzui%2BnCJp&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6a886e4bea0b6df8-LIM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{
+  &quot;name&quot;: &quot;tomas1&quot;,
+  &quot;username&quot;: &quot;tomas1&quot;,
+  &quot;email&quot;: &quot;tomas1@tomas.com&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;carmenca&quot;,
+    &quot;suite&quot;: &quot;Apt. 156&quot;,
+    &quot;city&quot;: &quot;Lima&quot;,
+    &quot;zipcode&quot;: &quot;54321-6789&quot;
+  },
+  &quot;id&quot;: 11
+}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.name == &#39;tomas1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.username == &#39;tomas1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7.3:86]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7.3:86]</span>
+                <span class="scenario-name">Alta de 3 usuarios</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>282</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.61">15:42:44.733 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.62">{
+&quot;name&quot;: &#39;tomas2&#39;,
+&quot;username&quot;: &#39;tomas2&#39;,
+&quot;email&quot;: &quot;tomas1@tomas.com&quot;,
+&quot;address&quot;: {
+  &quot;street&quot;: &quot;carmenca&quot;,
+  &quot;suite&quot;: &quot;Apt. 156&quot;,
+  &quot;city&quot;: &quot;Lima&quot;,
+  &quot;zipcode&quot;: &quot;54321-6789&quot;
+}
+      }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">281</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.76">15:42:44.734 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 152
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;tomas2&quot;,&quot;username&quot;:&quot;tomas2&quot;,&quot;email&quot;:&quot;tomas1@tomas.com&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;carmenca&quot;,&quot;suite&quot;:&quot;Apt. 156&quot;,&quot;city&quot;:&quot;Lima&quot;,&quot;zipcode&quot;:&quot;54321-6789&quot;}}
+
+15:42:45.013 response time in milliseconds: 277
+1 &lt; 201
+1 &lt; Date: Wed, 03 Nov 2021 20:42:44 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 208
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 996
+1 &lt; x-ratelimit-reset: 1635972195
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; access-control-allow-credentials: true
+1 &lt; cache-control: no-cache
+1 &lt; pragma: no-cache
+1 &lt; expires: -1
+1 &lt; access-control-expose-headers: Location
+1 &lt; location: http://jsonplaceholder.typicode.com/users/11
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;d0-lnOt7uz017ca+9rdbVK3IiclKjA&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=AGVOpP7ocPYts%2BebjpJGgkWPkyAygxwKeVsXZguwUvPoGaWHe00Qo6wO1Honur5j%2BayzvLY599R3P5zWZO5YW6HllMdPImFP7lUgovY%2FdVA8iMELlsHQavrPlz00N2apXwXpskCxaAnS%2Bw3CEa4B&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6a886e4d9b836df8-LIM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{
+  &quot;name&quot;: &quot;tomas2&quot;,
+  &quot;username&quot;: &quot;tomas2&quot;,
+  &quot;email&quot;: &quot;tomas1@tomas.com&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;carmenca&quot;,
+    &quot;suite&quot;: &quot;Apt. 156&quot;,
+    &quot;city&quot;: &quot;Lima&quot;,
+    &quot;zipcode&quot;: &quot;54321-6789&quot;
+  },
+  &quot;id&quot;: 11
+}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.name == &#39;tomas2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.username == &#39;tomas2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

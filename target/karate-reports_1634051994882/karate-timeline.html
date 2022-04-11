@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/users\/clientes[7.1:84]","start":1634051477157,"end":1634051479157,"title":"src\/test\/java\/examples\/users\/clientes[7.1:84] 10:11:17.157-10:11:19.157 Alta de 3 usuarios"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/users\/clientes[7.2:85]","start":1634051479168,"end":1634051479523,"title":"src\/test\/java\/examples\/users\/clientes[7.2:85] 10:11:19.168-10:11:19.523 Alta de 3 usuarios"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/users\/clientes[7.3:86]","start":1634051479534,"end":1634051479881,"title":"src\/test\/java\/examples\/users\/clientes[7.3:86] 10:11:19.534-10:11:19.881 Alta de 3 usuarios"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

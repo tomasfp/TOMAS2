@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-5","id":1},{"content":"pool-1-thread-4","id":2},{"content":"pool-1-thread-1","id":3},{"content":"pool-1-thread-2","id":4},{"content":"pool-1-thread-3","id":5}];
+var items = [{"id":1,"group":1,"content":"examples\/users\/users[1:7]","start":1643837062195,"end":1643837063348,"title":"examples\/users\/users[1:7] 18:24:22.195-18:24:23.348 get all users and then get the first user by id"},{"id":2,"group":2,"content":"examples\/users\/users[2:19]","start":1643837062897,"end":1643837063496,"title":"examples\/users\/users[2:19] 18:24:22.897-18:24:23.496 create a user and then get it by id"},{"id":3,"group":3,"content":"examples\/users\/clientes[1:11]","start":1643837060317,"end":1643837062183,"title":"examples\/users\/clientes[1:11] 18:24:20.317-18:24:22.183 Conexion Exitosa y zip codigo"},{"id":4,"group":4,"content":"examples\/users\/clientes[2:17]","start":1643837060318,"end":1643837062183,"title":"examples\/users\/clientes[2:17] 18:24:20.318-18:24:22.183 Mostrar user name"},{"id":5,"group":5,"content":"examples\/users\/clientes[3:22]","start":1643837060318,"end":1643837062183,"title":"examples\/users\/clientes[3:22] 18:24:20.318-18:24:22.183 Validar correo existente"},{"id":6,"group":2,"content":"examples\/users\/clientes[4:28]","start":1643837060317,"end":1643837062184,"title":"examples\/users\/clientes[4:28] 18:24:20.317-18:24:22.184 Validar username que no existe","className":"failed"},{"id":7,"group":1,"content":"examples\/users\/clientes[5:34]","start":1643837060317,"end":1643837062184,"title":"examples\/users\/clientes[5:34] 18:24:20.317-18:24:22.184 Validar correo no existente","className":"failed"},{"id":8,"group":5,"content":"examples\/users\/clientes[6:40]","start":1643837062213,"end":1643837062915,"title":"examples\/users\/clientes[6:40] 18:24:22.213-18:24:22.915 Alta de usuario"},{"id":9,"group":4,"content":"examples\/users\/clientes[7.1:84]","start":1643837062197,"end":1643837062903,"title":"examples\/users\/clientes[7.1:84] 18:24:22.197-18:24:22.903 Alta de 3 usuarios"},{"id":10,"group":3,"content":"examples\/users\/clientes[7.2:85]","start":1643837062205,"end":1643837062906,"title":"examples\/users\/clientes[7.2:85] 18:24:22.205-18:24:22.906 Alta de 3 usuarios"},{"id":11,"group":2,"content":"examples\/users\/clientes[7.3:86]","start":1643837062202,"end":1643837062889,"title":"examples\/users\/clientes[7.3:86] 18:24:22.202-18:24:22.889 Alta de 3 usuarios"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
